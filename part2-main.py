@@ -2,11 +2,11 @@ from typing import Final
 import os 
 from dotenv import load_dotenv
 from discord import Intents, Client, Message 
-
+from response import get_response
 #Load tokens from local env
 load_dotenv()
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
 
 intents: Intents = Intents.default()
 intents.message_content = True

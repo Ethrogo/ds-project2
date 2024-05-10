@@ -1,3 +1,7 @@
 Part 2: 
     - Used code from class 4/17 to connect bot to discord and tested was working
     - Created base of response.py based off of github example of chatbot.
+    - Used class example for bot and customized it. 
+    - Found dataset from kaggle on Lebron stats. Convinced ChatGPT Lebron was the 
+        GOAT. I found it very funny, and very hostile at times. 
+    
