@@ -5,3 +5,16 @@ Part 1:
         prj-data.db. Also created create_connection and tested it. 
     -insert data built and works, tested with run_every_minute in system test 
         with evidence of 60 minutes in prj-data.db
+    -Analysis and visualization built and tested tediously. Various sources 
+        used for specific syntax and gpt used for tools for visualization. 
+    -Statement: 
+        The factor increases with the accuracy of pi. To measure this, I used
+        a Pearson correlation coefficient between
+        log(factor) and log(pi deviation) is: -0.9999681002798192
+        This shows the two are almost perfectly inversely related.
+        My explanation for this is from the data, where factor is 1 
+        and pi is 4. As factor increases to 8, pi decreases to 
+        3.0170718. Pi continues increasing in accuracy while 
+        factor increases rapidly. It is also worth comparing
+        (which I could not get working) time vs factor to see if an 
+        exponential or linear curve fits better. 
