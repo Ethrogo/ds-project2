@@ -1,4 +1,6 @@
 Part 1: 
     -First built 2 functions, tested fetch_data and run_every_minute to see
         Factor, pi, and time, were variables returned. 
+    -Used ChatGPT to generate sql_create_records_table statement and created 
+        prj-data.db. Also created create_connection and tested it. 
         
