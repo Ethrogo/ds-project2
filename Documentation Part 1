@@ -1,2 +1,4 @@
 Part 1: 
-    -First built 2 functions, 
+    -First built 2 functions, tested fetch_data and run_every_minute to see
+        Factor, pi, and time, were variables returned. 
+        
