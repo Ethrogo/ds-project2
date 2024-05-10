@@ -30,8 +30,8 @@ def fetch_data():
 def insert_data(conn, data):
     sql = ''' INSERT INTO data_records(factor,pi,time)
               VALUES(?,?,?) '''
-    cur = conn.cursor()
-    cur.execute(sql, data)
+    values = (data['factor'], data['pi'], data['time'])
+    cur.execute(sql, values)
     conn.commit()
 
 def run_every_minute(duration_minutes):
@@ -40,9 +40,12 @@ def run_every_minute(duration_minutes):
         data = fetch_data()
         insert_data(conn, data)
         time.sleep(60)  
-
+    
+cur = conn.cursor()        
+sql_query = f"DELETE FROM data_records;"
+cur.execute(sql_query)
 run_every_minute(60)
-
+cur.close()
 
 # sql_create_data_records_table = """
 # CREATE TABLE IF NOT EXISTS data_records (

@@ -18,3 +18,11 @@ Part 1:
         factor increases rapidly. It is also worth comparing
         (which I could not get working) time vs factor to see if an 
         exponential or linear curve fits better. 
+    -Usage: 
+        - To run the ingestion, run part1.py. Ensure there is a 'prj-data.db' file 
+            available in the same directory. Make sure to run the command at 
+            the bottom of the file before running part1.py. 
+        - To view all analysis, which goes more in depth than all descriptions run
+            part1-analysis.py. You can do this before or after running part1.py, but 
+            during will produce weird results. I started at an even hour to produce
+            intended results. 
